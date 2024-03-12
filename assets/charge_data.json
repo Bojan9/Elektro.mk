@@ -1,0 +1,683 @@
+{
+    "chargers": [
+      {
+        "id": "35001",
+        "name": "Kriva Palanka",
+        "location": "Sv. Jovan Osogovski (Parking next to Osichki bridge), Kriva Palanka",
+        "coordinates": [
+          42.207667,
+          22.33825
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137906",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137907",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35002",
+        "name": "Kumanovo",
+        "location": "Marshal Tito (Culture center), Kumanovo",
+        "coordinates": [
+          42.134667,
+          21.719278
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137910",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137911",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35003",
+        "name": "Delchevo",
+        "location": "Svetozar Markovikj, Delchevo",
+        "coordinates": [
+          41.966056,
+          22.773917
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137890",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137891",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Out of service"
+          }
+        ]
+      },
+      {
+        "id": "35004",
+        "name": "Kocani",
+        "location": "Marshal Tito (Trade center parking), Kocani",
+        "coordinates": [
+          41.9169565,
+          22.4111978
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137888",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137889",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35005",
+        "name": "Stip",
+        "location": "Kej Marshal Tito, Stip",
+        "coordinates": [
+          41.7366328,
+          22.1903939
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137898",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137899",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35006",
+        "name": "Veles",
+        "location": "Goce Delchev, Veles",
+        "coordinates": [
+          41.7167576,
+          21.7828022
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "paid",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137880",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137881",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35007",
+        "name": "EV charger E75 - Veles",
+        "location": "Vardarska 7, Dolno Kalaslari, Veles",
+        "coordinates": [
+          41.6823953,
+          21.8314505
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "unknown",
+        "isOpen": true,
+        "parking": "paid",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "PR101",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "PR102",
+            "type": "Type 2 (cable attached)",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35008",
+        "name": "Kavadarci",
+        "location": "7 Septemvri 1, Kavadarci",
+        "coordinates": [
+          41.4338918,
+          22.0127572
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137882",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137883",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35009",
+        "name": "Strumica",
+        "location": "Bul. Marshal Tito, Strumica",
+        "coordinates": [
+          41.438476,
+          22.6401
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137856",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137857",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35010",
+        "name": "Gevgelija",
+        "location": "Dimitar Vlahov, Gevgelija",
+        "coordinates": [
+          41.1393789,
+          22.5026349
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137886",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137887",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35011",
+        "name": "Gevgelija - Makpetrol",
+        "location": "Border Crossing Bogorodica - Makpetrol, Gevgelija",
+        "coordinates": [
+          41.1385425,
+          22.5439901
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 3,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E49025002",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E49025003",
+            "type": "CCS2",
+            "tariff": "unknown",
+            "power": "100kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E49025004",
+            "type": "CHAdeMO",
+            "tariff": "unknown",
+            "power": "50kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35012",
+        "name": "Prilep",
+        "location": "Kuzman Josifovski Pitu, Prilep",
+        "coordinates": [
+          41.3452919,
+          21.5501603
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137908",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137909",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35013",
+        "name": "Aurora Resort & Spa",
+        "location": "Ul. 3 bb, Berovo Lake",
+        "coordinates": [
+          41.6727876,
+          22.8805255
+        ],
+        "availability": "24/7",
+        "roadAccess": "private",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 1,
+        "connectorInfo": [
+          {
+            "id": "PR103",
+            "type": "EU DOMESTIC PLUG",
+            "tariff": "unknown",
+            "power": "3kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35014",
+        "name": "Bitola",
+        "location": "Partizanska (Sports hall Parking), Bitola",
+        "coordinates": [
+          41.0230195,
+          21.3367098
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "paid",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137862",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137863",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35015",
+        "name": "Ohrid",
+        "location": "City Square (parking next to the Info center), Ohrid",
+        "coordinates": [
+          41.1124968,
+          20.798489
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "paid",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137872",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137873",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35016",
+        "name": "Struga",
+        "location": "Partizanska 29a, Struga",
+        "coordinates": [
+          41.172646,
+          20.6877963
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137840",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137841",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35017",
+        "name": "Struga - DuaMall",
+        "location": "R1201, Struga",
+        "coordinates": [
+          41.1869038,
+          20.6744124
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 1,
+        "connectorInfo": [
+          {
+            "id": "PR104",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "11kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35018",
+        "name": "Struga - Drim Hotel Procredit",
+        "location": "Boris Kidric 51, Struga",
+        "coordinates": [
+          41.1724572,
+          20.6788096
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "unknown",
+        "paymentAccess": "unknown",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 1,
+        "connectorInfo": [
+          {
+            "id": "PR105",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "11kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35019",
+        "name": "Kicevo",
+        "location": "Boulevard Osloboduvanje 2, Kicevo",
+        "coordinates": [
+          41.51285,
+          20.962695
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137850",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137851",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35020",
+        "name": "Gostivar",
+        "location": "Boris Kidrikj, Gostivar",
+        "coordinates": [
+          41.793457,
+          20.910598
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137900",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137901",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      },
+      {
+        "id": "35021",
+        "name": "Tetovo",
+        "location": "Dervish Cara 68, Tetovo",
+        "coordinates": [
+          42.006853,
+          20.973167
+        ],
+        "availability": "24/7",
+        "roadAccess": "public",
+        "paymentType": "paid",
+        "paymentAccess": "EVN charging card",
+        "isOpen": true,
+        "parking": "free",
+        "limit": "unknown",
+        "numConnectors": 2,
+        "connectorInfo": [
+          {
+            "id": "MK*EVN*E48137896",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          },
+          {
+            "id": "MK*EVN*E48137897",
+            "type": "Type 2",
+            "tariff": "unknown",
+            "power": "22kW",
+            "condition": "Avaliable"
+          }
+        ]
+      }
+    ]
+  }
