@@ -1,74 +1,97 @@
-import 'package:elektro/models/electric_charge.dart';
 import 'package:flutter/material.dart';
+import 'package:elektro/models/electric_charge.dart';
+import 'package:elektro/widgets/info_tab.dart';
+import 'package:elektro/widgets/chargers_tab.dart';
 
-class StationSinglePage extends StatelessWidget {
+class StationSinglePage extends StatefulWidget {
   final ElectricCharge charger;
 
   const StationSinglePage({super.key, required this.charger});
 
   @override
+  // ignore: library_private_types_in_public_api
+  _StationSinglePageState createState() => _StationSinglePageState();
+}
+
+class _StationSinglePageState extends State<StationSinglePage> {
+  bool _showInfoTab = true;
+
+  @override
   Widget build(BuildContext context) {
+    String capitalize(String s) => s[0].toUpperCase() + s.substring(1);
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(charger.name),
+        title: Text(widget.charger.name),
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Location: ${charger.location}',
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Top Image
+            Image.asset(
+              'assets/images/charger_placeholder.png',
+              width: double.infinity,
+              height: 200,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(height: 10),
+            // Station Name
+            Center(
+              child: Text(
+                widget.charger.name,
+                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 10),
-              Text('Coordinates: ${charger.coordinates}'),
-              const SizedBox(height: 10),
-              Text('Availability: ${charger.availability}'),
-              const SizedBox(height: 10),
-              Text('Road Access: ${charger.roadAccess}'),
-              const SizedBox(height: 10),
-              Text('Payment Type: ${charger.paymentType}'),
-              const SizedBox(height: 10),
-              Text('Payment Access: ${charger.paymentAccess}'),
-              const SizedBox(height: 10),
-              Text('Open: ${charger.isOpen ? 'Yes' : 'No'}'),
-              const SizedBox(height: 10),
-              Text('Parking: ${charger.parking}'),
-              const SizedBox(height: 10),
-              Text('Limit: ${charger.limit}'),
-              const SizedBox(height: 10),
-              Text('Number of Connectors: ${charger.numConnectors}'),
-              const SizedBox(height: 10),
-              const Text(
-                'Connector Information:',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10),
+            // Location and Availability
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Icon(Icons.location_on),
+                  Text(widget.charger.location),
+                ],
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: charger.connectorInfo
-                    .map(
-                      (info) => Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('ID: ${info.id}'),
-                          const SizedBox(height: 5),
-                          Text('Type: ${info.type}'),
-                          const SizedBox(height: 5),
-                          Text('Tariff: ${info.tariff}'),
-                          const SizedBox(height: 5),
-                          Text('Power: ${info.power}'),
-                          const SizedBox(height: 5),
-                          Text('Condition: ${info.condition}'),
-                          const Divider(),
-                        ],
-                      ),
-                    )
-                    .toList(),
+            ),
+            const SizedBox(height: 10),
+            Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(widget.charger.isOpen ? 'Open' : 'Closed'),
+                  const SizedBox(width: 10),
+                  Text(capitalize(widget.charger.roadAccess)),
+                ],
               ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 20),
+            // Navigation Bar
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _showInfoTab = true;
+                    });
+                  },
+                  child: const Text('Info'),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      _showInfoTab = false;
+                    });
+                  },
+                  child: const Text('Chargers'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            // Content based on selected tab
+            _showInfoTab ? InfoTab(charger: widget.charger) : ChargersTab(charger: widget.charger),
+          ],
         ),
       ),
     );

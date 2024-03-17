@@ -3,7 +3,7 @@
       {
         "id": "35001",
         "name": "Kriva Palanka",
-        "location": "Sv. Jovan Osogovski (Parking next to Osichki bridge), Kriva Palanka",
+        "location": "Sv. Jovan Osogovski, Kriva Palanka",
         "coordinates": [
           42.207667,
           22.33825
@@ -15,6 +15,7 @@
         "isOpen": true,
         "parking": "free",
         "limit": "unknown",
+        "amenities": "Restrooms, Restaurant",
         "numConnectors": 2,
         "connectorInfo": [
           {
@@ -102,7 +103,7 @@
       {
         "id": "35004",
         "name": "Kocani",
-        "location": "Marshal Tito (Trade center parking), Kocani",
+        "location": "Marshal Tito (Trade center), Kocani",
         "coordinates": [
           41.9169565,
           22.4111978
@@ -465,7 +466,7 @@
       {
         "id": "35015",
         "name": "Ohrid",
-        "location": "City Square (parking next to the Info center), Ohrid",
+        "location": "City Square (Info center), Ohrid",
         "coordinates": [
           41.1124968,
           20.798489

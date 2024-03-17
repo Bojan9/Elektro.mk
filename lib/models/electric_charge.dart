@@ -12,6 +12,7 @@ class ElectricCharge {
   final bool isOpen;
   final String parking;
   final String limit;
+  final List<String> amenities;
   final int numConnectors;
   final List<ConnectorInfo> connectorInfo;
 
@@ -27,6 +28,7 @@ class ElectricCharge {
     required this.isOpen,
     required this.parking,
     required this.limit,
+    required this.amenities,
     required this.numConnectors,
     required this.connectorInfo,
   });
@@ -50,6 +52,7 @@ class ElectricCharge {
       isOpen: json['isOpen'],
       parking: json['parking'],
       limit: json['limit'],
+      amenities: json['amenities'] != null ? List<String>.from(json['amenities'].split(',').map((x) => x.trim())) : [],
       numConnectors: json['numConnectors'],
       connectorInfo: connectorInfo,
     );

@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:elektro/models/electric_charge.dart';
 import 'package:elektro/views/station_single.dart';
 import 'package:elektro/widgets/station_search.dart';
@@ -37,11 +38,7 @@ class _StationListPageState extends State<StationListPage> {
         displayedChargers = List.from(allChargers);
       });
     } catch (e) {
-      /**
-       * FIXME:
-       * Handle error
-       */
-      print('Error loading chargers (exit app): $e');
+      exit(1);
     }
   }
 
@@ -54,70 +51,103 @@ class _StationListPageState extends State<StationListPage> {
     });
   }
 
+  void applyFilter(String criteria, String value) {
+    setState(() {
+      displayedChargers = allChargers.where((charger) {
+        switch (criteria) {
+          case 'availability':
+            return charger.availability.toLowerCase() == value.toLowerCase();
+          case 'roadAccess':
+            return charger.roadAccess.toLowerCase() == value.toLowerCase();
+          case 'paymentType':
+            return charger.paymentType.toLowerCase() == value.toLowerCase();
+          case 'paymentAccess':
+            return charger.paymentAccess.toLowerCase() == value.toLowerCase();
+          case 'isOpen':
+            return charger.isOpen.toString().toLowerCase() == value.toLowerCase();
+          case 'parking':
+            return charger.parking.toLowerCase() == value.toLowerCase();
+          case 'numConnectors':
+            return charger.numConnectors.toString().toLowerCase() == value.toLowerCase();
+          default:
+            return true; // No filtering
+        }
+      }).toList();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Chargers'),
-        ),
-        body: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.arrow_back),
-                    onPressed: () {
-                      // Handle options button pressed
-                    },
+      appBar: AppBar(
+        title: const Text('Chargers'),
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              children: [
+                const SizedBox(width: 10),
+                Expanded(
+                  child: StationSearch(
+                    onChanged: filterChargers,
                   ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: StationSearch(
-                      onChanged: filterChargers,
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  StationSearchOptions(
-                    onPressed: () {
-                      // Handle options button pressed
-                    },
-                  ),
-                ],
-              ),
+                ),
+                const SizedBox(width: 10),
+                StationSearchOptions(
+                  onOptionSelected: applyFilter, onPressed: () {  },
+                ),
+              ],
             ),
-            Expanded(
-              child: displayedChargers.isEmpty
-                  ? const Center(
-                      /**
-             * FIXME:
-             * When no stations found, add an image asset
-             */
-                      child: CircularProgressIndicator(),
-                    )
-                  : ListView.builder(
-                      itemCount: displayedChargers.length,
-                      itemBuilder: (context, index) {
-                        final charger = displayedChargers[index];
-                        return ListTile(
-                          title: Text(charger.name),
-                          subtitle: Text(charger.location),
-                          trailing: Text('ID: ${charger.id}'),
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => StationSinglePage(
-                                    charger: displayedChargers[index]),
+          ),
+          Expanded(
+            child: displayedChargers.isEmpty
+                ? const Center(
+                    child: Text("No station found :("),
+                  )
+                : ListView.builder(
+                    itemCount: displayedChargers.length,
+                    itemBuilder: (context, index) {
+                      final charger = displayedChargers[index];
+                      return Column(
+                        children: [
+                          ListTile(
+                            leading: Image.asset(
+                              charger.availability == '24/7'
+                                  ? 'assets/images/ec_open.png'
+                                  : 'assets/images/ec_closed.png',
+                              width: 50,
+                              height: 50,
+                            ),
+                            title: Text(
+                              charger.name,
+                              style: const TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
                               ),
-                            );
-                          },
-                        );
-                      },
-                    ),
-            )
-          ],
-        ));
+                            ),
+                            subtitle: Text(charger.location),
+                            trailing: const Icon(Icons.arrow_forward),
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => StationSinglePage(
+                                    charger: displayedChargers[index],
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                          const Divider(),
+                        ],
+                      );
+                    },
+                  ),
+          )
+        ],
+      ),
+    );
   }
 }
